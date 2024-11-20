@@ -8,8 +8,8 @@ void Swap(int &a, int &b){
     b = temp;
 }
 
-// Insertion Sort Function for Sorting an Array
-void Insertion_Sort (int Array[], int n){
+// Selection Sort Function for Sorting an Array
+void Selection_Sort (int Array[], int n){
     
     for (int i = 0; i < n - 1; i++){
         int mini_idx = i;
@@ -28,7 +28,7 @@ int main() {
     int Array[] = {5, 2, 9, 1, 5, 6};
     int size = sizeof(Array)/sizeof(Array[0]);
     
-    Insertion_Sort(Array, size);
+    Selection_Sort(Array, size);
     
     for (int i = 0; i < size; i++){
         cout << " " << Array[i];
